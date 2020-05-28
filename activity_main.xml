@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/screenWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/mainMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/sidebar"
+            android:orientation="vertical"
+            android:paddingRight="4dp">
+
+            <LinearLayout
+                android:id="@+id/colorButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/colorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/color"/>
+
+                <TextView
+                    android:id="@+id/colorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily=""
+                    android:gravity="center"
+                    android:text="Color"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/russo_one"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wheelsButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/wheelsImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/wheel"/>
+
+                <TextView
+                    android:id="@+id/wheelsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Wheels"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/russo_one"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/windowsTintButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/windowsTintImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/wintint"/>
+
+                <TextView
+                    android:id="@+id/windowsTintText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Window tints"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/russo_one"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spoilersButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/spoilerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/spoiler"/>
+
+                <TextView
+                    android:id="@+id/spoilerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Spoilers"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/russo_one"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bodykitsButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bodyKitsImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/bodykit"/>
+
+                <TextView
+                    android:id="@+id/bodyKitsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Bodykits"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/russo_one"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/suspensionButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/suspensionImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    app:srcCompat="@drawable/suspension"/>
+
+                <TextView
+                    android:id="@+id/suspensionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Suspension"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/russo_one"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/wrapperFullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/mainCanvas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/shadow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.075"
+                        app:srcCompat="@drawable/shadow"/>
+
+                    <ImageView
+                        android:id="@+id/behindwheel"
+                        android:layout_width="602dp"
+                        android:layout_height="129dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/car"
+                        app:layout_constraintStart_toStartOf="@+id/car"
+                        app:srcCompat="@drawable/behindwheel"/>
+
+                    <ImageView
+                        android:id="@+id/wheelFront"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginRight="420dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/windowTintFront"
+                        app:layout_constraintStart_toStartOf="@+id/windowTintFront"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.98"
+                        app:srcCompat="@drawable/wheel0"/>
+
+                    <ImageView
+                        android:id="@+id/wheelRear"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="290dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/windowTintFront"
+                        app:layout_constraintStart_toStartOf="@+id/windowTintFront"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.98"
+                        app:srcCompat="@drawable/wheel0"/>
+
+                    <ImageView
+                        android:id="@+id/car"
+                        android:layout_width="600dp"
+                        android:layout_height="200dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/red00"/>
+
+                    <ImageView
+                        android:id="@+id/windowTintFront"
+                        android:layout_width="600dp"
+                        android:layout_height="200dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/ftint0"/>
+
+                    <FrameLayout
+                        android:id="@+id/adViewContainer"
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                    </FrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/optionsBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/optionbar"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/photoModeSwitcher"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:alpha="1"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/modeswitch"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
